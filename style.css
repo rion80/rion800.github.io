@@ -1,0 +1,314 @@
+body {
+  margin:0;
+  font-family: "Hiragino Kaku Gothic ProN";
+  height:2000px;
+}
+li{
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.top-wrapper {
+  padding: 300px 0 230px 0;
+ background-color: rgb(119, 209, 194);
+  background-size: cover;
+  color: white;
+  text-align: center;
+  
+}
+
+.top-wrapper h1 {
+  
+  font-size: 60px;
+  letter-spacing: 5px;
+}
+
+header  {
+  height: 67px;
+  width: 100%;
+  background-color:white;
+  opacity: 0.8;
+  position:fixed;
+  top:0;
+  z-index:10;
+}
+
+.logo {
+  width: 40px;
+
+}
+
+.header-left {
+  float: left;
+}
+.gnav {
+  display: flex;
+  height: 2rem;
+  margin: 0 auto;
+  width: 1000px;
+}
+.gnav >li {/*親階層のみ幅を25%にする*/
+   width: 25%;
+  
+}
+/*全てのリスト・リンク共通*/
+.gnav li {
+  position: relative;
+  font-size: 20px;
+  
+}
+.gnav a:hover{
+  background-color:rgb(119, 209, 194);
+  transition: 0.35s;
+}
+.gnav li a {
+  background:white;
+  color:black;
+  display: block;
+  height: 67px;
+  line-height: 67px;
+  text-align: center;
+  text-decoration: none;
+ 
+}
+/*子階層以降共通*/
+.gnav li li {
+    height: 0;
+    overflow: hidden;
+    transition: .5s;
+    margin-right: 30px;
+    width: 119%;
+    position: relative;
+    right: 40px;
+}
+
+
+.gnav li:hover > ul > li {
+    height: 67px;
+    
+    overflow: visible;
+}
+
+
+
+.parallax-ag {
+  height: 100%;
+  margin: 0 auto;
+  letter-spacing: 2px;
+  font-size: 10px;
+}
+ 
+/*固定する背景*/
+.parallax{
+  box-sizing: border-box;
+  color: rgb(3, 0, 0);
+  justify-content: center;
+  height: auto;
+  padding: 5%;
+}
+.bg {
+  background-image: url(https://media.istockphoto.com/vectors/vector-modern-mechanism-industrial-concept-technology-gears-vector-id617364796?k=20&m=617364796&s=170667a&w=0&h=xqFVITOuAaYznmjmKACDFAN1ROePhD8A9vm70VihSlg=);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 25px;
+}
+.bg ul{
+  margin-left: 70px;
+ 
+}
+.bg li{
+  line-height: 100px;
+
+  
+  
+  
+}
+.bg h1{
+  text-align: center;
+  opacity: 0.8;
+}
+ 
+/*スクロールするコンテンツ*/
+.cg {
+  background-color:#36393F;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  color: #DCDDDE;
+}
+
+
+.note {
+  background-color:#004444;
+  box-shadow: 0 0 8px #009999;
+  margin: 20px 20px;
+  height: 200px;
+  width: 400px;
+  overflow-y: scroll;
+  border: solid thin #88FFFF;
+  opacity: 0.85;
+  font-size: large;
+
+}
+
+ .tools {
+   font-size: 15px;
+   color: #ffffff;
+  background-color: #3e9e9e;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem;
+  margin-left: -10px;
+  width: 150px;
+  height: 15px;
+  transform: skewX(-30deg);
+}
+
+
+
+.hidden {
+  display: none;
+}
+.parallax.bg img{
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  margin: auto; 
+  margin-bottom: 300px;
+ 
+}
+.parallax .bg{
+  height: 2000px;
+}
+
+/* LINE004 */
+.button_line004 a {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 200px;
+  padding: 10px 25px;
+  color: #313131;
+  transition: 0.3s ease-in-out;
+  font-weight: 600;
+}
+.button_line004 a:before,
+.button_line004 a:after {
+content: '';
+width: 18px;
+height: 18px;
+border-color: #6bb6ff;
+box-sizing: border-box;
+border-style :solid;
+display: block;
+position: absolute;
+transition: all 0.3s ease-in-out;
+}
+.button_line004 a:before {
+top: -6px;
+left: -6px;
+border-width: 2px 0 0 2px;
+z-index: 5;
+}
+.button_line004 a:after {
+bottom: -6px;
+right: -6px;
+border-width: 0 2px 2px 0;
+}
+.button_line004 a:hover:before,
+.button_line004 a:hover:after {
+width: calc(100% + 12px);
+height: calc(100% + 12px);
+border-color: #6bb6ff;
+}
+.button_line004 a:hover {
+color: #fff;
+background-color: #6bb6ff;
+border-color: #6bb6ff;
+}
+
+.anchor{
+  background-color: #3b4949;
+  height:600px;
+ color: #fff;
+}
+
+
+.note img{
+  width: 120px;
+  height: 120px;
+  margin-top: 20px;
+  opacity: 0.8;
+}
+.flex{
+  display: flex;
+}
+
+.solilo{
+  margin-top: 100px;
+  opacity: 0;
+  transition: all 1s ease;
+  position: relative;
+  padding: 5px 15px;
+  margin-left: 40px;
+  background: #def3ff;
+  border-radius: 20px;
+  height: 50px;
+  margin-right: 100px;
+  font-size: 28px;
+}
+
+.solilo:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f111";
+  font-weight: 900;
+  position: absolute;
+  font-size: 15px;
+  left: -40px;
+  bottom: 0;
+  color: #def3ff;
+}
+
+.solilo:after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f111";
+  font-weight: 900;
+  position: absolute;
+  font-size: 23px;
+  left: -23px;
+  bottom: 0;
+  color: #def3ff;
+}
+
+.parallax.bg p{
+  margin-left: 200px;
+}
+
+
+
+.solilo.show{
+  opacity: 1;
+  
+}
+.last{
+  height: 300px;
+ width: 600px;
+ margin-left: 340px;
+  background-color: #DCDDDE;
+}
+.topbtn{
+  margin-top: 100px;
+}
