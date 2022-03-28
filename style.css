@@ -1,7 +1,7 @@
 body {
   margin:0;
   font-family: "Hiragino Kaku Gothic ProN";
-  height:2000px;
+
 }
 li{
   list-style: none;
@@ -201,7 +201,7 @@ header  {
   margin: 0 auto;
   max-width: 200px;
   padding: 10px 25px;
-  color: #313131;
+  color: #f5f3f3;
   transition: 0.3s ease-in-out;
   font-weight: 600;
 }
@@ -303,7 +303,6 @@ border-color: #6bb6ff;
   opacity: 1;
   
 }
-
 .last{
 color: #313131;
   height: 400px;
