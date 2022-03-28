@@ -303,12 +303,28 @@ border-color: #6bb6ff;
   opacity: 1;
   
 }
+
 .last{
-  height: 300px;
- width: 600px;
- margin-left: 340px;
+color: #313131;
+  height: 400px;
+ width: 1000px;
+ margin: 0 auto;
+display: block;
   background-color: #DCDDDE;
 }
+.last dt{
+margin-top: 20px;
+margin-left: 20px;
+
+}
+.last a{
+  color: #009999;
+ 
+}
+.last dt :hover{
+  cursor: pointer;
+ color: #147bcf;
+}
 .topbtn{
-  margin-top: 100px;
+margin-top: 20px;
 }
